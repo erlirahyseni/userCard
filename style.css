@@ -1,5 +1,6 @@
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -89,7 +90,7 @@ body{
 .list-content p{
     font-size: 20px;
     font-weight: bolder;
-    padding: 25px 0;
+    padding: 0px;
 }
 
 .list{
@@ -98,11 +99,8 @@ body{
 }
 
 
-
-.search-content input::subm{
-    border: 1px solid transparent;
-    border-radius: 10px;
-    background-color: #272c43;
+.errorText{
+    font-size: 15px;
+    font-weight: 100;
 }
-
 
