@@ -3,12 +3,19 @@ let form = document.querySelector(".search-form");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let search = document.querySelector(".form-input").value;
+  let format = /^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/;
+
   if(search > 83){
     document.querySelector('.list').innerHTML= "ID must be less than or equal to 83.";
   }
-  if(isNaN(search)){
-    document.querySelector('.list').innerHTML= "You can only add number of ID";
+  if(search < 1){
+    document.querySelector('.list').innerHTML= "The ID number starts from 1";
   }
+
+  if(isNaN(search)){
+    document.querySelector('.list').innerHTML= "You can only add numbers, chars aren't valid";
+  }
+  
 
   let request = async () => {
     try {
