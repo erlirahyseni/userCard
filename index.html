@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <form action="" class="search-form">
+            <div class="logo">
+                <p>find...</p>
+            </div>
+            <div class="search-content">
+                <p>Search for Users details by <br>entering their ID</p>
+                <input type="text" name="name" id="name" class="form-input" placeholder="ID">
+            </div>
+            <div class="search-btn">
+                <button class="btn">Search</button>
+            </div>
+        </form>
+        <div class="list-content">
+            <p>Results</p>
+            <p class="errorText"></p>
+            <ul class="list"></ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
